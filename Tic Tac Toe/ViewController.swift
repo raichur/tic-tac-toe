@@ -10,7 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // For alternating x's and o's
     var goNumber = 1
+    
+    // 0 = empty, 1 = o, 2 = x
+    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     
     @IBOutlet weak var button0: UIButton!
     
