@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var winner = 0
     
     // All of the eight winning combinations for tic tac toe
-    let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 5, 8], [2, 5, 7]]
+    let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     
     @IBOutlet weak var button0: UIButton!
     
@@ -33,10 +33,14 @@ class ViewController: UIViewController {
         winner = 0
         label.alpha = 0
         playAgain.alpha = 0
-        playAgain.hidden = true
+        playAgain.enabled = false
         
-        var button: UIButton = view.viewWithTag(1) as UIButton
-        button.setImage(nil, forState: .Normal)
+        var button: UIButton
+        
+        for var i = 0; i <= 8; i++ {
+            button = view.viewWithTag(i) as UIButton
+            button.setImage(nil, forState: .Normal)
+        }
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
@@ -66,7 +70,7 @@ class ViewController: UIViewController {
                 }
                 UIView.animateWithDuration(0.5, animations: {
                     self.label.alpha = 1
-                    self.playAgain.hidden = false
+                    self.playAgain.enabled = true
                     self.playAgain.alpha = 1
                 })
             }
@@ -89,7 +93,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         label.alpha = 0
-        playAgain.hidden = true
         playAgain.alpha = 0
     }
 
