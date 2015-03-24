@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var button0: UIButton!
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        println("Working")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

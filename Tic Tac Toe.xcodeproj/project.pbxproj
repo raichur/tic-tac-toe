@@ -13,6 +13,9 @@
 		03A52AA31AC191CD00261185 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A52AA21AC191CD00261185 /* Images.xcassets */; };
 		03A52AA61AC191CD00261185 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A52AA41AC191CD00261185 /* LaunchScreen.xib */; };
 		03A52AB21AC191CD00261185 /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A52AB11AC191CD00261185 /* Tic_Tac_ToeTests.swift */; };
+		03A52ABE1AC1968B00261185 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A52ABB1AC1968B00261185 /* grid.png */; };
+		03A52ABF1AC1968B00261185 /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A52ABC1AC1968B00261185 /* o.png */; };
+		03A52AC01AC1968B00261185 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A52ABD1AC1968B00261185 /* x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		03A52AAB1AC191CD00261185 /* Tic Tac ToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A52AB01AC191CD00261185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A52AB11AC191CD00261185 /* Tic_Tac_ToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeTests.swift; sourceTree = "<group>"; };
+		03A52ABB1AC1968B00261185 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		03A52ABC1AC1968B00261185 /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = o.png; sourceTree = "<group>"; };
+		03A52ABD1AC1968B00261185 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				03A52A9B1AC191CD00261185 /* AppDelegate.swift */,
 				03A52A9D1AC191CD00261185 /* ViewController.swift */,
 				03A52A9F1AC191CD00261185 /* Main.storyboard */,
+				03A52ABB1AC1968B00261185 /* grid.png */,
+				03A52ABC1AC1968B00261185 /* o.png */,
+				03A52ABD1AC1968B00261185 /* x.png */,
 				03A52AA21AC191CD00261185 /* Images.xcassets */,
 				03A52AA41AC191CD00261185 /* LaunchScreen.xib */,
 				03A52A991AC191CD00261185 /* Supporting Files */,
@@ -192,7 +201,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A52AC01AC1968B00261185 /* x.png in Resources */,
+				03A52ABF1AC1968B00261185 /* o.png in Resources */,
 				03A52AA11AC191CD00261185 /* Main.storyboard in Resources */,
+				03A52ABE1AC1968B00261185 /* grid.png in Resources */,
 				03A52AA61AC191CD00261185 /* LaunchScreen.xib in Resources */,
 				03A52AA31AC191CD00261185 /* Images.xcassets in Resources */,
 			);
