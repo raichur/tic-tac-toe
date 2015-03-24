@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     // 0 = empty, 1 = o, 2 = x
     var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     
+    // All of the eight winning combinations for tic tac toe
+    let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 5, 8], [2, 5, 7]]
+    
+    var winner = 0
+    
     @IBOutlet weak var button0: UIButton!
     
     @IBAction func buttonPressed(sender: AnyObject) {
@@ -29,6 +34,16 @@ class ViewController: UIViewController {
             } else {
                 image = UIImage(named: "o.png")!
                 gameState[sender.tag] = 1
+            }
+            
+            for combination in winningCombinations {
+                if(gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]] && gameState[combination[0]] != 0) {
+                    winner = gameState[combination[0]]
+                }
+            }
+            
+            if (winner != 0) {
+                print("We have a winner")
             }
             
             goNumber++
