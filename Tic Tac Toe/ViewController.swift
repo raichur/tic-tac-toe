@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var button0: UIButton!
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        println("Working")
+        var image = UIImage(named: "x.png")
+        sender.setImage(image, forState: .Normal)
     }
     
     override func viewDidLoad() {
