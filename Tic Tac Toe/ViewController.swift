@@ -16,16 +16,32 @@ class ViewController: UIViewController {
     // 0 = empty, 1 = o, 2 = x
     var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     
+    var winner = 0
+    
     // All of the eight winning combinations for tic tac toe
     let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 5, 8], [2, 5, 7]]
     
-    var winner = 0
-    
     @IBOutlet weak var button0: UIButton!
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var playAgain: UIButton!
+    
+    @IBAction func playAgainPressed(sender: AnyObject) {
+        goNumber = 1
+        gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        winner = 0
+        label.alpha = 0
+        playAgain.alpha = 0
+        playAgain.hidden = true
+        
+        var button: UIButton = view.viewWithTag(1) as UIButton
+        button.setImage(nil, forState: .Normal)
+    }
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        if (gameState[sender.tag] == 0) {
+        if (gameState[sender.tag] == 0 && winner == 0) {
             var image = UIImage()
             
             if (goNumber % 2 == 0) {
@@ -43,7 +59,16 @@ class ViewController: UIViewController {
             }
             
             if (winner != 0) {
-                print("We have a winner")
+                if (winner == 1) {
+                    label.text = "O has won!"
+                } else {
+                    label.text = "X has won!"
+                }
+                UIView.animateWithDuration(0.5, animations: {
+                    self.label.alpha = 1
+                    self.playAgain.hidden = false
+                    self.playAgain.alpha = 1
+                })
             }
             
             goNumber++
@@ -60,6 +85,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        label.alpha = 0
+        playAgain.hidden = true
+        playAgain.alpha = 0
     }
 
 

@@ -141,6 +141,32 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RFd-oH-qYz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuz-6j-Prq">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Hxe-pW-i3j"/>
+                                    <constraint firstAttribute="height" constant="320" id="UNM-Kc-IMp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpq-2F-QOA">
+                                <rect key="frame" x="2" y="342" width="316" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="136-dk-e1u"/>
+                                    <constraint firstAttribute="width" constant="316" id="agx-4j-b5d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="33"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="1" green="0.36754948748394745" blue="0.19546687704274746" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="m8T-Sb-97u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -148,6 +174,7 @@
                             <constraint firstAttribute="centerY" secondItem="K8x-hU-I6s" secondAttribute="centerY" id="AD8-R6-m3r"/>
                             <constraint firstItem="VEg-wt-LQ0" firstAttribute="top" secondItem="K8x-hU-I6s" secondAttribute="top" constant="218" id="C1D-pj-Qw6"/>
                             <constraint firstItem="K8x-hU-I6s" firstAttribute="leading" secondItem="U6f-Cj-rQW" secondAttribute="leading" constant="-110" id="C9i-ap-aQV"/>
+                            <constraint firstItem="K8x-hU-I6s" firstAttribute="leading" secondItem="Wuz-6j-Prq" secondAttribute="leading" id="Cgx-fG-jgT"/>
                             <constraint firstItem="ZAN-NU-Mij" firstAttribute="top" secondItem="K8x-hU-I6s" secondAttribute="top" constant="218" id="IUQ-Bm-8K9"/>
                             <constraint firstItem="K8x-hU-I6s" firstAttribute="leading" secondItem="HIv-QE-4kf" secondAttribute="leading" constant="-218" id="Knf-P8-9EO"/>
                             <constraint firstItem="K8x-hU-I6s" firstAttribute="top" secondItem="U6f-Cj-rQW" secondAttribute="top" constant="-110" id="Pw2-0B-ZJl"/>
@@ -156,10 +183,13 @@
                             <constraint firstItem="K8x-hU-I6s" firstAttribute="leading" secondItem="17c-Vg-cBl" secondAttribute="leading" constant="-2" id="WeI-uQ-xub"/>
                             <constraint firstItem="kis-h4-Xh3" firstAttribute="top" secondItem="K8x-hU-I6s" secondAttribute="top" constant="110" id="a1L-v6-v7V"/>
                             <constraint firstItem="a10-TA-HT3" firstAttribute="top" secondItem="K8x-hU-I6s" secondAttribute="top" constant="218" id="bbF-ZN-x28"/>
+                            <constraint firstItem="K8x-hU-I6s" firstAttribute="top" secondItem="Wuz-6j-Prq" secondAttribute="top" id="brn-qZ-tRZ"/>
                             <constraint firstItem="48p-5o-ZzG" firstAttribute="leading" secondItem="K8x-hU-I6s" secondAttribute="leading" constant="110" id="eBW-RR-vUe"/>
                             <constraint firstItem="VEg-wt-LQ0" firstAttribute="leading" secondItem="K8x-hU-I6s" secondAttribute="leading" constant="110" id="fzK-T6-3iW"/>
                             <constraint firstItem="jwE-od-t6f" firstAttribute="leading" secondItem="K8x-hU-I6s" secondAttribute="leading" constant="2" id="g76-mH-JzK"/>
                             <constraint firstItem="a10-TA-HT3" firstAttribute="leading" secondItem="K8x-hU-I6s" secondAttribute="leading" constant="218" id="gsd-jy-nDY"/>
+                            <constraint firstItem="K8x-hU-I6s" firstAttribute="leading" secondItem="vpq-2F-QOA" secondAttribute="leading" constant="-2" id="mmd-fg-KfE"/>
+                            <constraint firstItem="K8x-hU-I6s" firstAttribute="top" secondItem="vpq-2F-QOA" secondAttribute="top" constant="-218" id="pvI-jN-dK1"/>
                             <constraint firstItem="ZAN-NU-Mij" firstAttribute="leading" secondItem="K8x-hU-I6s" secondAttribute="leading" constant="2" id="ty2-9v-WHU"/>
                             <constraint firstItem="48p-5o-ZzG" firstAttribute="top" secondItem="K8x-hU-I6s" secondAttribute="top" constant="3" id="u53-GA-cFc"/>
                             <constraint firstItem="K8x-hU-I6s" firstAttribute="top" secondItem="17c-Vg-cBl" secondAttribute="top" constant="-110" id="y4h-xi-IiZ"/>
@@ -169,6 +199,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="button0" destination="jwE-od-t6f" id="Ssc-dv-FmV"/>
+                        <outlet property="label" destination="Wuz-6j-Prq" id="Yws-fg-4Zx"/>
+                        <outlet property="playAgain" destination="vpq-2F-QOA" id="vmQ-Gq-Vmm"/>
                     </connections>
                 </viewController>
             </objects>
