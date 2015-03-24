@@ -9,11 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var goNumber = 1
+    
     @IBOutlet weak var button0: UIButton!
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        var image = UIImage(named: "x.png")
+        
+        var image = UIImage()
+        
+        if (goNumber % 2 == 0) {
+            image = UIImage(named: "x.png")!
+        } else {
+            image = UIImage(named: "o.png")!
+        }
+        
+        goNumber++
         sender.setImage(image, forState: .Normal)
     }
     
