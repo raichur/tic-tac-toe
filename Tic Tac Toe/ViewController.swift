@@ -33,14 +33,26 @@ class ViewController: UIViewController {
         winner = 0
         label.alpha = 0
         playAgain.alpha = 0
-        playAgain.enabled = false
+     
         
-        var button: UIButton
-        
-        for var i = 0; i <= 8; i++ {
-            button = view.viewWithTag(i) as UIButton
-            button.setImage(nil, forState: .Normal)
-        }
+        var button = view.viewWithTag(0) as UIButton
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(1) as UIButton
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(2) as UIButton
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(3) as UIButtongit
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(4) as UIButton
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(5) as UIButton
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(6) as UIButton
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(7) as UIButton
+        button.setImage(nil, forState: .Normal)
+        button = view.viewWithTag(8) as UIButton
+        button.setImage(nil, forState: .Normal)
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
