@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         button.setImage(nil, forState: .Normal)
         button = view.viewWithTag(2) as UIButton
         button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(3) as UIButtongit
+        button = view.viewWithTag(3) as UIButton
         button.setImage(nil, forState: .Normal)
         button = view.viewWithTag(4) as UIButton
         button.setImage(nil, forState: .Normal)
