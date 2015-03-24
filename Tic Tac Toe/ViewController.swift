@@ -20,16 +20,21 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        var image = UIImage()
-        
-        if (goNumber % 2 == 0) {
-            image = UIImage(named: "x.png")!
-        } else {
-            image = UIImage(named: "o.png")!
+        if (gameState[sender.tag] == 0) {
+            var image = UIImage()
+            
+            if (goNumber % 2 == 0) {
+                image = UIImage(named: "x.png")!
+                gameState[sender.tag] = 2
+            } else {
+                image = UIImage(named: "o.png")!
+                gameState[sender.tag] = 1
+            }
+            
+            goNumber++
+            sender.setImage(image, forState: .Normal)
         }
         
-        goNumber++
-        sender.setImage(image, forState: .Normal)
     }
     
     override func viewDidLoad() {
