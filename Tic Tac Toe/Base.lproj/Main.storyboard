@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="100" id="cTW-Jr-MCe"/>
                                     <constraint firstAttribute="width" constant="100" id="nHV-gA-wH3"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -43,9 +43,12 @@
                                     <constraint firstAttribute="height" constant="100" id="4bL-Dl-UCe"/>
                                     <constraint firstAttribute="width" constant="100" id="AeB-rR-odb"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9sh-im-sDr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIv-QE-4kf">
                                 <rect key="frame" x="218" y="127" width="100" height="100"/>
@@ -53,9 +56,12 @@
                                     <constraint firstAttribute="height" constant="100" id="bKU-3n-3fG"/>
                                     <constraint firstAttribute="width" constant="100" id="xrZ-yL-xQc"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f9l-gt-Ch9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17c-Vg-cBl">
                                 <rect key="frame" x="2" y="234" width="100" height="100"/>
@@ -63,9 +69,12 @@
                                     <constraint firstAttribute="width" constant="100" id="96b-ce-Hno"/>
                                     <constraint firstAttribute="height" constant="100" id="ziC-AA-kGU"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y91-XY-UzR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6f-Cj-rQW">
                                 <rect key="frame" x="110" y="234" width="100" height="100"/>
@@ -73,9 +82,12 @@
                                     <constraint firstAttribute="height" constant="100" id="FfO-0r-8ki"/>
                                     <constraint firstAttribute="width" constant="100" id="phP-i8-smG"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fF2-Yl-aSF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kis-h4-Xh3">
                                 <rect key="frame" x="218" y="234" width="100" height="100"/>
@@ -83,7 +95,7 @@
                                     <constraint firstAttribute="height" constant="100" id="mh4-Ha-N32"/>
                                     <constraint firstAttribute="width" constant="100" id="sKE-XY-8Kx"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -96,9 +108,12 @@
                                     <constraint firstAttribute="width" constant="100" id="DDe-ue-viF"/>
                                     <constraint firstAttribute="height" constant="100" id="k7C-eu-esH"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2rn-7Y-ze8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEg-wt-LQ0">
                                 <rect key="frame" x="110" y="342" width="100" height="100"/>
@@ -106,9 +121,12 @@
                                     <constraint firstAttribute="height" constant="100" id="akc-lz-w7O"/>
                                     <constraint firstAttribute="width" constant="100" id="yiF-J1-eJG"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BaR-i8-nqK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a10-TA-HT3">
                                 <rect key="frame" x="218" y="342" width="100" height="100"/>
@@ -116,9 +134,12 @@
                                     <constraint firstAttribute="width" constant="100" id="Zo5-oQ-HiL"/>
                                     <constraint firstAttribute="height" constant="100" id="vGT-br-L9g"/>
                                 </constraints>
-                                <state key="normal" image="o.png">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RFd-oH-qYz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -155,6 +176,5 @@
     </scenes>
     <resources>
         <image name="grid.png" width="1250" height="1250"/>
-        <image name="o.png" width="1250" height="1250"/>
     </resources>
 </document>
