@@ -31,28 +31,15 @@ class ViewController: UIViewController {
         goNumber = 1
         gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         winner = 0
+        
+        for i in 0...8 {
+            var button = view.viewWithTag(i) as UIButton
+            button.setImage(nil, forState: .Normal)
+        }
+        
         label.alpha = 0
         playAgain.alpha = 0
-     
-        
-        var button = view.viewWithTag(0) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(1) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(2) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(3) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(4) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(5) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(6) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(7) as UIButton
-        button.setImage(nil, forState: .Normal)
-        button = view.viewWithTag(8) as UIButton
-        button.setImage(nil, forState: .Normal)
+        playAgain.enabled = false
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
